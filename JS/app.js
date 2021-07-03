@@ -8,9 +8,3 @@ window.addEventListener('scroll', () => {
         bouton.style.display="block";
     }
   });
-
-  window.addEventListener('load', () => {
-
-    loader.classList.add('fondu-out');
-
-  })
