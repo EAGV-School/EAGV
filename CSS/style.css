@@ -130,7 +130,7 @@ nav li:hover a {
 }
 
 .background#photo-1 {
-	background-image: url(photo1.png);
+	background-image: url(/photo1.png);
 }
 
 .background#photo-2 {
