@@ -203,6 +203,34 @@ nav li:hover a {
 
 /*Page Equipe*/
 
+.equipe {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.personnes {
+  border-radius: 10px;
+  border: white 1px solid;
+  padding: 30px 30px;
+}
+
+.photo-equipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.photo-equipe img{
+  display: block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
 
 /*Buttons*/
 
@@ -232,6 +260,7 @@ nav li:hover a {
   border: var(--primary) 1px solid;
   border-radius: 10px;
   padding: 10px 20px;
+  display: none;
 }
 
 #presentation .button:hover {
@@ -250,6 +279,7 @@ nav li:hover a {
   border: var(--primary) 1px solid;
   border-radius: 10px;
   padding: 10px 20px;
+  display: none;
 }
 
 #remonter .button:hover {
