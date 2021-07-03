@@ -279,3 +279,16 @@ nav li:hover a {
 		height: 100vh;
 	}
 }
+
+
+@media screen and (max-width: 960px) {
+	.background#flotte {	
+		height: 150vh;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.background#flotte {	
+		height: 170vh;
+	}
+}
