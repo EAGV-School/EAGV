@@ -1,0 +1,308 @@
+/*Général*/
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #f79f1f;
+}
+
+body {
+  font-family: "", Calibri;
+  font-size: 17px;
+  color: black;
+  line-height: 1.6;
+  margin: 0 auto;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+a {
+  color: var(--primary);
+}
+
+#forme {
+  background-color: #ffffff;
+}
+
+/*Menu*/
+nav {
+  width: 100%;
+  background-color: var(--primary);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  list-style-type: none;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 30px;
+  color: white;
+}
+
+/*Animation menu*/
+.menu-link:hover {
+  border-top: 5px solid white;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-link {
+  transition: background-color 0.4s;
+}
+
+nav li:hover a {
+  padding: 15px 30px 20px 30px;
+}
+
+/*Page d'accueil*/
+#EAGV {
+  color: white;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+#accueil {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+}
+
+.faq {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+/*Présentation de l'EAGV*/
+#presentation {
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.description {
+  color: black;
+  font-size: 30px;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/*Backgrounds*/
+.background {
+  height: 100vh;
+  filter: brightness(0.7);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.background#photo-1 {
+  background-image: url(/photo1.png);
+}
+
+.background#photo-2 {
+  background-image: url(/photo2.png);
+}
+
+.background#photo-3 {
+  background-image: url(/photo3.png);
+}
+
+.background#photo-4 {
+  background-image: url(/photo4.png);
+}
+
+.background#flotte {
+  background-image: url(/photoflotte.png);
+  position: fixed;
+}
+
+.background#equipe {
+  background-image: url(/equipe.png);
+}
+
+/*Page flotte*/
+
+#intro-flotte {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  font-size: 25px;
+}
+.éléments-liste {
+  width: 100%;
+  list-style-type: none;
+  text-align: left;
+  border: white 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+}
+
+.liste-description {
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  list-style-type: none;
+}
+
+.liste-titre-avion {
+  display: flex;
+  justify-content: space-around;
+}
+
+.href-liste-flotte {
+  color: white;
+}
+
+/*Page Equipe*/
+
+.equipe {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.personnes {
+  border-radius: 10px;
+  border: white 1px solid;
+  padding: 30px 30px;
+}
+
+.photo-equipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.photo-equipe img{
+  display: block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+/*Buttons*/
+
+#accueil .button {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  border: white 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#accueil .button:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+#presentation .button {
+  font-size: 20px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--primary);
+  border: var(--primary) 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: none;
+}
+
+#presentation .button:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+#remonter .button {
+  font-size: 20px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: var(--primary);
+  border: var(--primary) 1px solid;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: none;
+}
+
+#remonter .button:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.button {
+  transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+@media screen and (max-width: 780px) {
+  p.description {
+    font-size: 80%;
+  }
+  ul.liste-flotte {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  p.description {
+    font-size: 80%;
+  }
+}
