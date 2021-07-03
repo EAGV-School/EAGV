@@ -1,5 +1,5 @@
 let bouton = document.getElementById("top-button");
-let bouton2 = document.getElementById("top-button2");
+const loader = document.querySelector('.loader');
 
 window.addEventListener('scroll', () => {
     if(window.scrollY === 0) {
@@ -9,11 +9,8 @@ window.addEventListener('scroll', () => {
     }
   });
 
+  window.addEventListener('load', () => {
 
-window.addEventListener('scroll', () => {
-    if(window.scrollY === 0) {
-        bouton.style.display="none";
-    } else {
-        bouton.style.display="block";
-    }
-  });
+    loader.classList.add('fondu-out');
+
+  })
