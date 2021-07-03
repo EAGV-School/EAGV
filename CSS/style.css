@@ -1,0 +1,293 @@
+/*Général*/
+* {
+		scroll-behavior: smooth;
+}
+
+body {
+	font-family: '', Calibri;
+	font-size: 17px;
+	color: black;
+	line-height: 1.6;
+	margin: 0 auto;
+	background-color: white;
+}
+
+h1 {
+	color: white;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+#forme {
+	background-color: #ffffff;
+}
+
+
+/*Menu*/
+nav {
+	width: 100%;
+	background-color:#18C395;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	list-style-type: none;
+	float: left;
+		
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+	color: white;
+}
+
+
+/*Animation menu*/
+.menu-link:hover {
+	border-top: 5px solid white;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.menu-link {
+	transition: background-color 0.4s;
+}
+
+
+nav li:hover a {
+	padding: 15px 30px 20px 30px;
+}
+
+
+/*Page d'accueil*/
+#EAGV {
+	color: white;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 50px;
+
+}
+
+#accueil {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0 20px;
+	position: relative;
+}
+
+.faq {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	padding: 0;
+	position: relative;
+}
+
+/*Présentation de l'EAGV*/
+#presentation {
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.description {
+	color: black;
+	font-size: 30px;
+	text-align: justify;
+	margin: 0 auto;
+	padding:50px;
+}
+
+/*Backgrounds*/
+.background {
+	
+	height: 100vh;
+	filter: brightness(0.7);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+}
+
+.background#photo-1 {
+	background-image: url(https://nsa40.casimages.com/img/2021/06/30//21063011294221809.png);
+}
+
+.background#photo-2 {
+	background-image: url(https://nsa40.casimages.com/img/2021/07/01//210701112839187083.png);
+}
+
+.background#photo-3 {
+	background-image: url(https://nsa40.casimages.com/img/2021/07/02//210702104530997332.png);
+}
+
+.background#photo-4 {
+	background-image: url(https://nsa40.casimages.com/img/2021/07/02//210702110408390196.png);
+}
+
+.background#flotte {
+	background-image: url(https://nsa40.casimages.com/img/2021/06/29//210629101500714028.png);
+}
+
+/*Page flotte*/
+
+#intro-flotte {
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	color: white;
+	font-size: 25px;
+}
+.éléments-liste {
+	width: 100%;
+	list-style-type: none;
+	text-align: left;
+	border: white 1px solid;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: white;
+	font-size: 20px;
+
+}
+
+.liste {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 350px;
+}
+
+.liste-description {
+	font-size: 17px;
+	text-align: center;
+	color: white;
+	list-style-type: none;
+}
+
+.liste-titre-avion {
+	display: flex;
+	justify-content: space-around;
+}
+
+.href-liste-flotte {
+	color: white;
+}
+
+/*Buttons*/
+
+#accueil .button {
+	font-size: 30px;
+	text-decoration: none;
+	color: white;
+	border: white 1px solid;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+#accueil .button:hover {
+	background:#18C395;
+	color: white;
+	border-color: #18C395;
+}
+
+#presentation .button {
+	font-size: 20px;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #18C395;
+	border: #18C395 1px solid;
+	border-radius: 10px;
+	padding: 10px 20px;
+
+}
+
+#presentation .button:hover {
+	background: #18C395;
+	color: white;
+	border-color: #18C395;
+}
+
+#remonter .button {
+	font-size: 20px;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #18C395;
+	border: #18C395 1px solid;
+	border-radius: 10px;
+	padding: 10px 20px;
+
+}
+
+#remonter .button:hover {
+	background: #18C395;
+	color: white;
+	border-color: #18C395;
+}
+
+.button {
+	transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+@media screen and (max-width: 780px) {
+	p.description {
+		font-size: 20px
+	}
+	ul.liste-flotte {
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	p.description {
+		font-size: 80%;
+	}
+}
+
+@media screen and (min-height: 720px) {
+	.background#flotte {	
+		height: 150vh;
+	}
+}
+
+@media screen and (min-height: 1080px) {
+	.background#flotte {	
+		height: 100vh;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.background#flotte {	
+		height: 150vh;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.background#flotte {	
+		height: 170vh;
+	}
+}
