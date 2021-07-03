@@ -270,13 +270,13 @@ nav li:hover a {
 
 @media screen and (min-height: 720px) {
 	.background#flotte {	
-		height: 100vh;
+		height: 150vh;
 	}
 }
 
 @media screen and (min-height: 1080px) {
 	.background#flotte {	
-		height: 150vh;
+		height: 100vh;
 	}
 }
 
