@@ -289,4 +289,19 @@ p.contact {
   nav a {
     font-size: 15px;
   }
+  p.description {
+    font-size: 20px;
+  }
+  .description {
+    padding: 0;
+  }
+  p.contact {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  p.description {
+    font-size: 25;
+  }
 }
