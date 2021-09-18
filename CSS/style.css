@@ -200,6 +200,7 @@ p.contact {
 
 .background#photo-6 {
   background-image: url(../Pictures/photo6.png);
+  position:fixed;
 }
 
 /*Buttons*/
