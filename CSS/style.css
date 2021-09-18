@@ -137,7 +137,8 @@ nav li:hover a {
   color: white;
   text-align: center;
   margin: 0 auto;
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   border-radius: 9999px;
   background-color: rgba(var(--primary-as-rgb), .4);
   height: 50%;
@@ -248,8 +249,8 @@ p.contact {
 /*Page formation*/
 
 .video {
-  margin-left: 30px;
-  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-bottom: 40px;
 }
 
 .sous-titre-formation {
@@ -299,10 +300,7 @@ p.contact {
   p.contact {
     font-size: 22px;
   }
-}
-
-@media only screen and (max-width: 730px) {
-  p.description {
-    font-size: 25;
+  .sous-titre-formation {
+    font-size: 25px;
   }
 }
