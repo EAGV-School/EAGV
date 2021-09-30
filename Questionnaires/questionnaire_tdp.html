@@ -51,7 +51,8 @@
     <p class="p2" id="correction2">Vous êtes en finale en tour de piste sur un terrain en auto information, que dites vous ? <span class="pvert">Fontenay, de F-XH, en finale piste 30, pour un touché</span></p>
     <p class="p2" id="correction3">Habituelement, sur quel plan de descente devez être en finale sur un terrain ? <span class="pvert">Sur un plan 3°, 5%</span></p>
     <br>
-    <button class="button" id="button_correction" type="submit" name="button_correction">Corriger</button>
+    <button class="button" id="button_correction" type="submit" name="button_correction">Afficher la correction</button>
+    <button class="button" id="button_enlever_correction" type="submit" name="button_enlever_correction">Enlever la correction</button>
 
     
     <br>
@@ -59,15 +60,27 @@
   </div>
   <script type="text/javascript">
     
-    var btn = document.querySelector('button');
-  
-    function correction() {
+    var btn = document.getElementById('button_correction');
+    var btn2 = document.getElementById('button_enlever_correction');
+
+    function correction1() {
     document.getElementById('correction1').style.display="block";
     document.getElementById('correction2').style.display="block";
     document.getElementById('correction3').style.display="block";
+    document.getElementById('button_enlever_correction').style.display="block";
+    document.getElementById('button_correction').style.display="none";
+    }
+    
+    function correction2() {
+    document.getElementById('correction1').style.display="none";
+    document.getElementById('correction2').style.display="none";
+    document.getElementById('correction3').style.display="none";
+    document.getElementById('button_enlever_correction').style.display="none";
+    document.getElementById('button_correction').style.display="block";
     }
 
-    btn.onclick = correction;
+    btn.onclick = correction1;
+    btn2.onclick = correction2;
 
   </script>
 </body>

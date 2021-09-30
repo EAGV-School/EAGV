@@ -345,7 +345,7 @@ p.contact {
   border: var(--primary) 1px solid;
   background-color: white;
   border-radius: 10px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   display: block;
 }
 
@@ -355,10 +355,39 @@ p.contact {
   border-color: var(--primary);
 }
 
+
+.button#button_enlever_correction {
+  font-size: 17px;
+  text-decoration: none;
+  position: absolute;
+  left: 2rem;
+  bottom: 0,5rem;
+  color: var(--primary);
+  border: var(--primary) 1px solid;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: none;
+}
+
+.button:hover#button_enlever_correction {
+background: var(--primary);
+color: white;
+border-color: var(--primary);
+}
+
 #correction1, #correction2, #correction3{
   display: none;
 }
 
 .redirection {
   padding-left:2rem;
+}
+
+
+.prochainement {
+  position: center;
+  padding-top: 20rem;
+  font-size: 150px;
+  color: var(--primary);
 }
