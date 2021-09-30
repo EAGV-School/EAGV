@@ -249,7 +249,7 @@ p.contact {
 /*Page formation*/
 
 .video {
-  padding-left: 30px;
+  padding-left: 20px;
   padding-bottom: 40px;
 }
 
@@ -270,10 +270,11 @@ p.contact {
 }  
 
 /*Responsive*/
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 720px) {
   .video {
-    width: 320px;
-    height: 180px;
+    width: 360px;
+    height: 230px;
+
   }
   .equipe {
     color: #ffffff;
@@ -303,4 +304,61 @@ p.contact {
   .sous-titre-formation {
     font-size: 25px;
   }
+}
+
+/*Page questionnaires*/
+.p2 {
+  color: var(--primary);
+  font-size: 20px;
+  padding-left: 2rem;
+}
+.p3 {
+  color: var(--primary);
+  font-size:16px;
+}
+.pvert {
+  color: green;
+}
+.questionnaire {
+  color: var(--primary);
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.sous-titre-questionnaire {
+  color: var(--primary);
+  text-align: left;
+  padding-left: 30px;
+  font-size: 30px;
+}
+
+
+.button#button_correction {
+  font-size: 17px;
+  text-decoration: none;
+  position: absolute;
+  left: 2rem;
+  bottom: 0,5rem;
+  color: var(--primary);
+  border: var(--primary) 1px solid;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: block;
+}
+
+.button:hover#button_correction {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+#correction1, #correction2, #correction3{
+  display: none;
+}
+
+.redirection {
+  padding-left:2rem;
 }
