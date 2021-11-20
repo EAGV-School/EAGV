@@ -317,6 +317,13 @@ p.contact {
   .sous-titre-formation {
     font-size: 25px;
   }
+  .titre-accueil {
+    font-size: 40px;
+    padding-bottom: 2rem;
+  }
+  .vidéo {  
+    height: 100vh;
+  }
 }
 
 /*Page questionnaires*/
