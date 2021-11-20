@@ -12,12 +12,13 @@
 }
 
 body {
-  font-family: "", Calibri;
+  overflow-x: hidden;
   font-size: 17px;
-  color: black;
+  color: var(--primary);
   line-height: 1.6;
   margin: 0 auto;
   background-color: white;
+  font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
 }
 
 h1 {
@@ -45,7 +46,7 @@ a {
 }
 
 p {
-  color: #ffffff;
+  color: var(--primary);
   font-size: 20px;
 }
 
@@ -102,12 +103,12 @@ nav li:hover a {
 }
 
 /*Page d'accueil*/
-#EAGV {
+.titre-accueil {
   color: white;
   padding: 0;
   margin: 0 auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 75px;
 }
 
 #accueil {
@@ -157,12 +158,8 @@ p.description {
 }
 
 p.contact {
-  color: var(--primary);
   font-size: 30px;
   text-align: justify;
-  margin: 0 auto;
-  width: 100%;
-  background-color: white;
   padding: 2rem;
 }
 
@@ -179,9 +176,22 @@ p.contact {
   bottom: 0;
   right: 0;
   z-index: -1;
-  width: 100%;
 }
 
+.vidéo {
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: brightness(0.7)
+}
+
+.background#video-1 {
+  background: url(../Pictures/vidéo-1.mp4);
+}
 .background#photo-1 {
   background-image: url(../Pictures/photo1.png);
 }
