@@ -10,6 +10,18 @@
     <title>Accueil</title>
   </head>
   <body>
+    <div class="loader">
+      <span class="lettre">C</span>
+      <span class="lettre">H</span>
+      <span class="lettre">A</span>
+      <span class="lettre">R</span>
+      <span class="lettre">G</span>
+      <span class="lettre">E</span>
+      <span class="lettre">M</span>
+      <span class="lettre">E</span>
+      <span class="lettre">N</span>
+      <span class="lettre">T</span>
+    </div>
     <nav>     
       <div class="menu">
         <li class="menu-link"><a href="index.html">Accueil</a></li>
@@ -18,7 +30,7 @@
       </div>
     </nav>
     <header id="accueil">
-      <video class="vidéo" src="../Pictures/vidéo-1.mp4" autoplay muted loop></video>
+      <video class="vidéo" src="../Pictures/vidéo-1.mp4" autoplay loop muted></video>
       <div class="overlay">
         <h1 class="titre-accueil">Voler a toujours été le rêve de l'homme<br>Pourquoi pas le vôtre ?</h1>
         <a href="#presentation" class="button">Découvrir</a>
@@ -68,6 +80,13 @@
                 bouton.style.display="block";
             }
           });
+      </script>
+      <script>
+        const loader = document.querySelector('.loader');
+
+        window.addEventListener('load', () => {
+          loader.classList.add('fondu-out');
+        })
       </script>
     </div>
   </body>
