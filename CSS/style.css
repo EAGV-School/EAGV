@@ -128,6 +128,7 @@ p {
 .fondu-out {
   opacity: 0;
   transition: opacity 0.4s ease-out;
+  display: none;
 }
 /*Menu*/
 nav {
@@ -399,8 +400,9 @@ p.contact {
   .vidéo {  
     height: 100vh;
   }
-  .loader {
-    opacity: 0;
+  .lettre {
+    font-size: 40px;
+    letter-spacing: 5px;
   }
 }
 
