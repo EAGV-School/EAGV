@@ -356,55 +356,8 @@ p.contact {
   font-size: 40px;
   margin-bottom: 40px;
   margin-top: 30px;
-}  
-
-/*Responsive*/
-@media only screen and (max-width: 720px) {
-  .video {
-    width: 360px;
-    height: 230px;
-
-  }
-  .equipe {
-    color: #ffffff;
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-  .photo-equipe {
-    display: none;
-  }
-  nav a {
-    font-size: 15px;
-  }
-  p.description {
-    font-size: 20px;
-  }
-  .description {
-    padding: 0;
-  }
-  p.contact {
-    font-size: 22px;
-  }
-  .sous-titre-formation {
-    font-size: 25px;
-  }
-  .titre-accueil {
-    font-size: 40px;
-    padding-bottom: 2rem;
-  }
-  .vidéo {  
-    height: 100vh;
-  }
-  .lettre {
-    font-size: 40px;
-    letter-spacing: 5px;
-  }
 }
+
 
 /*Page questionnaires*/
 .p2 {
